@@ -1,6 +1,6 @@
 # Исследование данных сервиса “Яндекс.Музыка” — сравнение пользователей двух городов
 
-[ipynb](https://github.com/AlexKretov/Portfolio/tree/main/YandexMusic)
+[ipynb](https://github.com/AlexKretov/Portfolio/blob/main/YandexMusic/yandex_muisc.ipynb)
 
 ## Описание проекта
 Цель исследования — проверьте три гипотезы:
