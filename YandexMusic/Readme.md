@@ -1,6 +1,6 @@
 # Исследование данных сервиса “Яндекс.Музыка” — сравнение пользователей двух городов
 
-[ipynb](https://github.com/aq2003/Portfolio/tree/main/Analyzing%20Texts)
+[ipynb](https://github.com/AlexKretov/Portfolio/tree/main/YandexMusic)
 
 ## Описание проекта
 Цель исследования — проверьте три гипотезы:
