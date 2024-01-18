@@ -1,5 +1,5 @@
 # 5. Исследование рынка российского кинопроката
-[ipynb](https://github.com/AlexKretov/Portfolio/blob/b067d7b8c4631d3125ee25354290b6b023253141/Cinema/cinema%20(1).ipynb)
+[ipynb](https://github.com/AlexKretov/Portfolio/blob/8bfdb54c45c38396675b71b449ac6faaf8c9facf/Cinema/cinema%20(1).ipynb)
 |Сферы деятельности компаний| Оффлайн, Стриминговый сервис|
 | --- | --- |
 |Направление деятельности| Data Analyst, Продуктовый аналитик|
