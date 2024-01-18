@@ -1,5 +1,5 @@
 # 3. Продажа квартир в Санкт-Петербурге — анализ рынка недвижимости
-[ipynb](https://www.notion.so/3-e218c79a78b44ce5a3455bbf1efc98b4)
+[ipynb](https://github.com/AlexKretov/Portfolio/blob/509f911e8166299a50746728436f3e6cecccc445/Spb_flats/spb-flats.ipynb)
 |Сферы деятельности компаний| Интернет-сервисы, Площадки объявлений|
 | --- | --- |
 |Направление деятельности| Data Analyst, Fraud-аналитик, Маркетинг-аналитик|
