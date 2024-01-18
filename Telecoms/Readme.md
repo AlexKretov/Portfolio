@@ -1,5 +1,5 @@
 # 4. Определение выгодного тарифа для телеком компании
-[ipynb](Telecoms/Telecoms_v1.ipynb)
+[ipynb](https://github.com/AlexKretov/Portfolio/blob/746fbe646d6ff3ad2d0e2734e6fe81091267f1c2/Telecoms/Telecoms_v1.ipynb)
 |Сферы деятельности компаний| Телеком|
 | --- | --- |
 |Направление деятельности| Data Analyst, Маркетинг-аналитик, Продуктовый аналитик|
