@@ -1,5 +1,5 @@
 # 6. Классификаиция клиентов телеком компании
-[ipynb](http:\\)
+[ipynb](https://github.com/AlexKretov/Portfolio/blob/b459ed9ff990386ae0e472fd7b5d3ed18b1ce31e/TelecomClients/ClientsClassification%20(1).ipynb)
 |Сферы деятельности компаний| Телеком|
 |--------------|-----------|
 |Направление деятельности| Классификация, Машинное обучение|
