@@ -1,5 +1,5 @@
 # 8. Определение наиболее выгодного региона нефтедобычи
-[ipynb](https://github.com/AlexKretov/Portfolio/blob/02a1fba8539edd0e02a597af981b811976d45a77/OilMining/OilMining.ipynb)
+[ipynb](https://github.com/AlexKretov/Portfolio/blob/261af8871d88e382c805875b0eaff40b1e977bd7/OilMining/OilMining.ipynb)
 |Сферы деятельности компаний| Добывающие компании|
 |---------------------------|--------------------|
 |Направление деятельности| Машинное обучение, Разработка бизнес-модели, Регррессия, Финансовый аналитик|
