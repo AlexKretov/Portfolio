@@ -1,5 +1,5 @@
 # 11. Защита данных клиентов страховой компании
-[ipynb](https://github.com/AlexKretov/Portfolio/blob/efbfa6421534eccaee3f4e07af733ea6bee914d8/Insurance/insurance_personal_info_encryption.ipynb)
+[ipynb](https://github.com/AlexKretov/Portfolio/blob/ef5fdbb9540f7a614657d25cad4ed1fb9be873f6/Insurance/insurance_personal_info_encryption.ipynb)
 |Сферы деятельности компаний| Банковская сфера, Инвестиции, Интернет-сервисы, Телеком|
 |---------------------------|--------------------------------------------------------|
 |Направление деятельности| Машинное обучение|
