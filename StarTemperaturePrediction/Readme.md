@@ -1,5 +1,5 @@
 # 13. Прогнозирование темпаратуры звезды
-[ipynb](xx)
+[ipynb](https://github.com/AlexKretov/Portfolio/blob/2e6305def04aea77630d14bea9b1aa6b2ccf8276/StarTemperaturePrediction/star_regression_nn.ipynb)
 |Сферы деятельности компаний| Science|
 |---------------------------|--------|
 |Направление деятельности| Машинное обучение, Регррессия|
