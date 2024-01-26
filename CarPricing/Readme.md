@@ -1,5 +1,5 @@
 # 12. Построение модели определения стоимости автомобиля
-[ipynb](https://github.com/AlexKretov/Portfolio/blob/152ba331bfcebeb1a0be607aaa5ec32c0dc22494/CarPricing/car_price_predict.ipynb)
+[ipynb](https://github.com/AlexKretov/Portfolio/blob/2cc4547fd96126a94fe8f06548417ee4d76bb68f/CarPricing/car_price_predict.ipynb)
 |Сферы деятельности компаний| Бизнес, Интернет-магазины, Интернет-сервисы|
 |---------------------------|--------------------------------------------|
 |Направление деятельности| Машинное обучение|
