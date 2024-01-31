@@ -1,5 +1,5 @@
 # 16. Обучение модели классификации комментариев
-[ipynb](_______)
+[ipynb](https://github.com/AlexKretov/Portfolio/blob/fe90a85431b81d53d5e4e85e98cb730889b2bf90/ToxicCommentsClassification/toxic_comments_classification.ipynb)
 |Сферы деятельности компаний| Интернет-сервисы, Стартапы|
 |---------------------------|---------------------------|
 |Направление деятельности| NLP, Машинное обучение|
