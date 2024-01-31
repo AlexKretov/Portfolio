@@ -1,5 +1,5 @@
 # Создание рекомендательной системы
-[ipynb](http:\\)  
+[ipynb](https://github.com/AlexKretov/Portfolio/blob/70041e15a6b2960135e46c9437b5718dce84d496/Matching/2_matching_final_git.ipynb)  
 |Сферы деятельности компаний|	Маркетплейсы|
 |---------------------------|-------------|
 |Направление деятельности|	Data Analyst |
