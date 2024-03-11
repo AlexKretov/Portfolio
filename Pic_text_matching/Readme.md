@@ -1,5 +1,5 @@
 # 18. Поиск по изображению
-[ipynb](#pookie)
+[ipynb](https://github.com/AlexKretov/Portfolio/blob/c1b2bc867fa2a1630ccc03e987c082461ee5ffb4/Pic_text_matching/pic_text_matching.ipynb)
 
 |Сферы деятельности компаний| Интернет-сервисы, Стартапы|
 |--------------------------|---------------------------|
