@@ -1,5 +1,5 @@
 # 14. Разработка системы предупреждения аварий на каршеринге
-[ipynb](https://github.com/AlexKretov/Portfolio/blob/078ae9f87230331348a92f7cc414ba54095f1f11/Car_accident_prediction/car_accident_prediction.ipynb))
+[ipynb](https://github.com/AlexKretov/Portfolio/blob/078ae9f87230331348a92f7cc414ba54095f1f11/Car_accident_prediction/car_accident_prediction.ipynb)
 |Сферы деятельности компаний| Бизнес, Интернет-сервисы, Оффлайн|
 |---------------------------|----------------------------------|
 |Направление деятельности| SQL, Машинное обучение|
