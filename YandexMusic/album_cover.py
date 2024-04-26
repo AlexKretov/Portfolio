@@ -6,7 +6,7 @@ import pandas as pd
 import torch
 from PIL import Image
 from io import BytesIO
-index = read_index("YandexMusic/large.index")
+index = read_index("large.index")
 
 #Функция загружет выбранную версию CLIP на имеющийся девайс, на вход получает идентификатор модели согласно каталогу 
 def get_model_info(model_ID, device):
@@ -48,17 +48,20 @@ def find_neighbor(vec,n):
     #print(I.flatten())
     rez = pd.DataFrame(columns=["genre"])
     for idx in I.flatten():
-        rez.loc[ len(rez.index )] = [df.iloc[int(idx)]]
+        rez.loc[ len(rez.index )] = [df.iloc[int(idx)]['genre']]
     return rez.value_counts(normalize=True).head(1).index[0][0]
 image_data = uploaded_file.getvalue()
-st.image(image_data)
+
 img = Image.open(BytesIO(image_data))
 vector = get_single_image_embedding(img)
-df = pd.read_csv('YandexMusic/covers.csv')
-genre, idx = find_neighbor(vector, 7)
+df = pd.read_csv('covers.csv')
+genre = find_neighbor(vector, 7)
 
 cap = "Вероятный жанр: " +  str(genre)
-st.image(uploaded_file, caption=cap, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+try:
+     st.image(image_data, caption=cap, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+except:
+     st.write('Одидаем загруки обложку')
 
 #rec_list=[]
 #for i in rage(len(idx)):
