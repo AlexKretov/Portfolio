@@ -58,7 +58,7 @@ try:
 	genre = find_neighbor(vector, 7)
 	cap = "Вероятный жанр: " +  str(genre)
 except: 
-	st.st.write('Ожидаем загрузку обложки')
+	st.write('Ожидаем загрузку обложки')
 try:
      st.image(image_data, caption=cap, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
 except:
