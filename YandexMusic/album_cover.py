@@ -4,6 +4,7 @@ from transformers import CLIPProcessor, CLIPModel, CLIPTokenizer
 import numpy as np
 import pandas as pd
 import torch
+from PIL import Image
 index = read_index("YandexMusic/large.index")
 
 #Функция загружет выбранную версию CLIP на имеющийся девайс, на вход получает идентификатор модели согласно каталогу 
@@ -49,7 +50,8 @@ def find_neighbor(vec,n):
         rez.loc[ len(rez.index )] = [y_train.iloc[int(idx)]]
     return rez.value_counts(normalize=True).head(1).index[0][0], I
 
-vector = get_single_image_embedding(uploaded_file)
+img = Image.open(uploaded_file)
+vector = get_single_image_embedding(img)
 genre, idx = find_neighbor(vector, 7)
 
 cap = "Вероятный жанр: " +  str(genre)
