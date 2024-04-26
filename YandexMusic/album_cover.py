@@ -6,7 +6,7 @@ import pandas as pd
 import torch
 from PIL import Image
 from io import BytesIO
-index = read_index("large.index")
+index = read_index("YandexMusic/large.index")
 
 #Функция загружет выбранную версию CLIP на имеющийся девайс, на вход получает идентификатор модели согласно каталогу 
 def get_model_info(model_ID, device):
@@ -54,7 +54,7 @@ image_data = uploaded_file.getvalue()
 
 img = Image.open(BytesIO(image_data))
 vector = get_single_image_embedding(img)
-df = pd.read_csv('covers.csv')
+df = pd.read_csv('YandexMusic/covers.csv')
 genre = find_neighbor(vector, 7)
 
 cap = "Вероятный жанр: " +  str(genre)
