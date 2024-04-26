@@ -4,7 +4,7 @@ from transformers import CLIPProcessor, CLIPModel, CLIPTokenizer
 import numpy as np
 import pandas as pd
 import torch
-index = read_index("large.index")
+index = read_index("YandexMusic/large.index")
 #Функция загружет выбранную версию CLIP на имеющийся девайс, на вход получает идентификатор модели согласно каталогу 
 def get_model_info(model_ID, device):
     # Save the model to device
