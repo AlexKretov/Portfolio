@@ -49,7 +49,7 @@ def find_neighbor(vec,n):
     rez = pd.DataFrame(columns=["genre"])
     for idx in I.flatten():
         rez.loc[ len(rez.index )] = [df.iloc[int(idx)]]
-    return rez.value_counts(normalize=True).head(1).index[0][0], I
+    return rez.value_counts(normalize=True).head(1).index[0][0]
 image_data = uploaded_file.getvalue()
 st.image(image_data)
 img = Image.open(BytesIO(image_data))
