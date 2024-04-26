@@ -1,4 +1,4 @@
-faiss==1.5.3
+faiss==1.7.4
 numpy
 pandas
 streamlit
