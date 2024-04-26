@@ -5,6 +5,7 @@ import numpy as np
 import pandas as pd
 import torch
 from PIL import Image
+from io import BytesIO
 index = read_index("YandexMusic/large.index")
 
 #Функция загружет выбранную версию CLIP на имеющийся девайс, на вход получает идентификатор модели согласно каталогу 
@@ -51,7 +52,7 @@ def find_neighbor(vec,n):
     return rez.value_counts(normalize=True).head(1).index[0][0], I
 image_data = uploaded_file.getvalue()
 st.image(image_data)
-img = Image.open(image_data)
+img = Image.open(BytesIO(image_data))
 vector = get_single_image_embedding(img)
 genre, idx = find_neighbor(vector, 7)
 
