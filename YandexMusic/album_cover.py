@@ -5,6 +5,7 @@ import numpy as np
 import pandas as pd
 import torch
 index = read_index("YandexMusic/large.index")
+
 #Функция загружет выбранную версию CLIP на имеющийся девайс, на вход получает идентификатор модели согласно каталогу 
 def get_model_info(model_ID, device):
     # Save the model to device
@@ -15,14 +16,16 @@ def get_model_info(model_ID, device):
 	tokenizer = CLIPTokenizer.from_pretrained(model_ID)
        # Return model, processor & tokenizer
 	return model, processor, tokenizer
+	
 # Set the device
 device = "cuda" if torch.cuda.is_available() else "cpu"
-print(device)
- # Define the model ID
+
+
+# Define the model ID
 model_ID = "openai/clip-vit-base-patch32"
 # Get model, processor & tokenizer
 model, processor, tokenizer = get_model_info(model_ID, device)
-st.title('Определение жанра альбома по картинке и рекомендательная система')
+st.title('Определение жанра альбома по картинке')
 uploaded_file = st.file_uploader("Загрузите обложку альбома",type=['png','jpg','bmp','tif'])
 # Функция принимает на вход картинку, а возвращает эмбеддинг
 def get_single_image_embedding(my_image):
@@ -51,8 +54,8 @@ genre, idx = find_neighbor(vector, 7)
 
 cap = "Вероятный жанр: " +  str(genre)
 st.image(uploaded_file, caption=cap, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
-df = pd.read_csv('covers.csv')
-rec_list=[]
-for i in rage(len(idx)):
-    rec_list.append(df.iloc[i]['cover'])
-st.image(rec_list, caption="Вам могут понравиться") 
+df = pd.read_csv('YandexMusic/covers.csv')
+#rec_list=[]
+#for i in rage(len(idx)):
+#    rec_list.append(df.iloc[i]['cover'])
+#st.image(rec_list, caption="Вам могут понравиться") 
