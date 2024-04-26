@@ -49,8 +49,9 @@ def find_neighbor(vec,n):
     for idx in I.flatten():
         rez.loc[ len(rez.index )] = [y_train.iloc[int(idx)]]
     return rez.value_counts(normalize=True).head(1).index[0][0], I
-
-img = Image.open(uploaded_file)
+image_data = uploaded_file.getvalue()
+st.image(image_data)
+img = Image.open(image_data)
 vector = get_single_image_embedding(img)
 genre, idx = find_neighbor(vector, 7)
 
