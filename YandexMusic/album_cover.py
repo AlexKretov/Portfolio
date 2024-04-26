@@ -43,7 +43,7 @@ def get_single_image_embedding(my_image):
 # Функция принимает на вход вектор изображения vec, в формета ячейки датафрейма, в которой лежит эмбеддинг, и число  ответов n,а возвращает жанр наиболее часто встречающийся
 # среди n обложек альбомов наиболее близких к заданному вектору vec
 def find_neighbor(vec,n):
-    array_2d_test = vec.reshape(-1, dd)
+    array_2d_test = vec.reshape(-1, 512)
     D, I = index.search(array_2d_test, n)  # Возвращает результат: Distances, Indices
     #print(I.flatten())
     rez = pd.DataFrame(columns=["genre"])
