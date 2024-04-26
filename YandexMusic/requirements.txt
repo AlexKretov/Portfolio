@@ -1,4 +1,4 @@
-faiss==1.7.4
+faiss-gpu
 numpy
 pandas
 streamlit
