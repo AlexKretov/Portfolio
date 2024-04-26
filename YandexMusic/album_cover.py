@@ -50,18 +50,19 @@ def find_neighbor(vec,n):
     for idx in I.flatten():
         rez.loc[ len(rez.index )] = [df.iloc[int(idx)]['genre']]
     return rez.value_counts(normalize=True).head(1).index[0][0]
-image_data = uploaded_file.getvalue()
-
-img = Image.open(BytesIO(image_data))
-vector = get_single_image_embedding(img)
-df = pd.read_csv('YandexMusic/covers.csv')
-genre = find_neighbor(vector, 7)
-
-cap = "Вероятный жанр: " +  str(genre)
+try:
+	image_data = uploaded_file.getvalue()
+	img = Image.open(BytesIO(image_data))
+	vector = get_single_image_embedding(img)
+	df = pd.read_csv('YandexMusic/covers.csv')
+	genre = find_neighbor(vector, 7)
+	cap = "Вероятный жанр: " +  str(genre)
+except: 
+	st.st.write('Ожидаем загрузку обложки')
 try:
      st.image(image_data, caption=cap, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
 except:
-     st.write('Одидаем загруки обложку')
+     st.write('. . .')
 
 #rec_list=[]
 #for i in rage(len(idx)):
