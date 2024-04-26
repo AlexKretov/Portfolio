@@ -48,17 +48,18 @@ def find_neighbor(vec,n):
     #print(I.flatten())
     rez = pd.DataFrame(columns=["genre"])
     for idx in I.flatten():
-        rez.loc[ len(rez.index )] = [y_train.iloc[int(idx)]]
+        rez.loc[ len(rez.index )] = [df.iloc[int(idx)]]
     return rez.value_counts(normalize=True).head(1).index[0][0], I
 image_data = uploaded_file.getvalue()
 st.image(image_data)
 img = Image.open(BytesIO(image_data))
 vector = get_single_image_embedding(img)
+df = pd.read_csv('YandexMusic/covers.csv')
 genre, idx = find_neighbor(vector, 7)
 
 cap = "Вероятный жанр: " +  str(genre)
 st.image(uploaded_file, caption=cap, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
-df = pd.read_csv('YandexMusic/covers.csv')
+
 #rec_list=[]
 #for i in rage(len(idx)):
 #    rec_list.append(df.iloc[i]['cover'])
