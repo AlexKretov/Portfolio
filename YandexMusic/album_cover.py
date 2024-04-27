@@ -9,6 +9,7 @@ from PIL import Image
 from io import BytesIO
 index = read_index("YandexMusic/large.index")
 
+
 #Функция загружет выбранную версию CLIP на имеющийся девайс, на вход получает идентификатор модели согласно каталогу 
 def get_model_info(model_ID, device):
     # Save the model to device
@@ -19,7 +20,9 @@ def get_model_info(model_ID, device):
 	tokenizer = CLIPTokenizer.from_pretrained(model_ID)
        # Return model, processor & tokenizer
 	return model, processor, tokenizer
-	
+@st.cache_resource
+def get_model_info_session(model_ID, device):
+    return get_model_info(model_ID, device)
 # Set the device
 device = "cuda" if torch.cuda.is_available() else "cpu"
 #device = "cpu"
@@ -28,7 +31,7 @@ device = "cuda" if torch.cuda.is_available() else "cpu"
 # Define the model ID
 model_ID = "openai/clip-vit-base-patch32"
 # Get model, processor & tokenizer
-model, processor, tokenizer = get_model_info(model_ID, device)
+model, processor, tokenizer = get_model_info_session(model_ID, device)
 #st.cache.clear()
 st.title('Определение жанра альбома по картинке')
 uploaded_file = st.file_uploader("Загрузите обложку альбома",type=['png','jpg','bmp','tif'])
