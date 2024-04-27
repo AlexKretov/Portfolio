@@ -3,4 +3,5 @@ numpy
 pandas
 streamlit
 transformers
-pillow 
+pillow
+pytorch
