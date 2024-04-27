@@ -1,0 +1,6 @@
+faiss-cpu
+numpy
+pandas
+streamlit
+torch
+transformers
