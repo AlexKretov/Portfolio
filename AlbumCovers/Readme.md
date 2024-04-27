@@ -21,8 +21,8 @@ tkinter
 3. В качестве альтернативной гипотезы была построена нейросеть на архитектуре resnet50, но её точность значительно уступает FAISS.
 4. Была проведена кластеризация, на основе которой удалось сделать вывод, что только некоторые жанры имеют характерную стилистику обложек:  
    ![image](https://github.com/AlexKretov/Portfolio/assets/128688742/d9813147-c633-4082-a02b-306c3b9530b7)
-5. Онлайн версия модели была разврнута в облаке по адресу: [https://album-cover.streamlit.app/](https://album-cover.streamlit.app/)
+5. Онлайн версия модели была развернута в облаке по адресу: [https://album-cover.streamlit.app/](https://album-cover.streamlit.app/)
 
-Ознакоамится с тетрадкой можно здесь [ipynb](https://github.com/AlexKretov/Portfolio/blob/main/AlbumCovers/music.ipynb)
+Ознакомиться с тетрадкой можно здесь [ipynb](https://github.com/AlexKretov/Portfolio/blob/main/AlbumCovers/music.ipynb)
 
 
