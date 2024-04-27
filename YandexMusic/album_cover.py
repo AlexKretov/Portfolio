@@ -46,6 +46,11 @@ def get_single_image_embedding(my_image):
     # convert the embeddings to numpy array
     embedding_as_np = embedding.cpu().detach().numpy()
     return embedding_as_np
+
+@st.cache_resource
+def get_single_image_embedding_session(my_image):
+    return get_single_image_embedding(my_image)
+	
 # Функция принимает на вход вектор изображения vec, в формета ячейки датафрейма, в которой лежит эмбеддинг, и число  ответов n,а возвращает жанр наиболее часто встречающийся
 # среди n обложек альбомов наиболее близких к заданному вектору vec
 def find_neighbor(vec,n):
@@ -56,13 +61,18 @@ def find_neighbor(vec,n):
     for idx in I.flatten():
         rez.loc[ len(rez.index )] = [df.iloc[int(idx)]['genre']]
     return rez.value_counts(normalize=True).head(1).index[0][0]
+
+@st.cache_resource
+def find_neighbor_session(vec,n):
+    return find_neighbor(vec,n)
+
 df = pd.read_csv('YandexMusic/covers.csv')
 try:
 	image_data = uploaded_file.getvalue()
 	img = Image.open(BytesIO(image_data))
-	vector = get_single_image_embedding(img)
+	vector = get_single_image_embedding_session(img)
 	
-	genre = find_neighbor(vector, 7)
+	genre = find_neighbor_session(vector, 7)
 	cap = "Вероятный жанр: " +  str(genre)
 except: 
 	st.write('Ожидаем загрузку обложки')
