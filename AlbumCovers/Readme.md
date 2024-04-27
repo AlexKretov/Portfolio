@@ -23,6 +23,6 @@ tkinter
    ![image](https://github.com/AlexKretov/Portfolio/assets/128688742/d9813147-c633-4082-a02b-306c3b9530b7)
 5. Онлайн версия модели была разврнута в облаке по адресу: [https://album-cover.streamlit.app/](https://album-cover.streamlit.app/)
 
-Ознакоамится с тетрадкой можно здесь [ipynb](https://github.com/AlexKretov/Portfolio/blob/9666690ee8d7dc3fd90d89de55b8e4450309881a/AlbumCovers/music.ipynb)
+Ознакоамится с тетрадкой можно здесь [ipynb](https://github.com/AlexKretov/Portfolio/blob/631c236c7785d20480e696c5e391e7effc82bafc/AlbumCovers/music.ipynb)
 
 
