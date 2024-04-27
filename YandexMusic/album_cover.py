@@ -29,7 +29,7 @@ device = "cuda" if torch.cuda.is_available() else "cpu"
 model_ID = "openai/clip-vit-base-patch32"
 # Get model, processor & tokenizer
 model, processor, tokenizer = get_model_info(model_ID, device)
-st.cache.clear()
+#st.cache.clear()
 st.title('Определение жанра альбома по картинке')
 uploaded_file = st.file_uploader("Загрузите обложку альбома",type=['png','jpg','bmp','tif'])
 # Функция принимает на вход картинку, а возвращает эмбеддинг
@@ -64,7 +64,7 @@ except:
 	st.write('Ожидаем загрузку обложки')
 try:
      st.image(image_data, caption=cap, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
-     st.cache.clear()
+     #st.cache.clear()
 except:
      st.write('. . .')
 
