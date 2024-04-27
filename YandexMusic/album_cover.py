@@ -62,6 +62,7 @@ except:
 	st.write('Ожидаем загрузку обложки')
 try:
      st.image(image_data, caption=cap, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+     st.cache.clear()
 except:
      st.write('. . .')
 
