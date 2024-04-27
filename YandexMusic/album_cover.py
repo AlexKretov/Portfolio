@@ -3,7 +3,7 @@ from faiss import write_index, read_index
 from transformers import CLIPProcessor, CLIPModel, CLIPTokenizer
 import numpy as np
 import pandas as pd
-import torch
+#import torch
 from PIL import Image
 from io import BytesIO
 index = read_index("YandexMusic/large.index")
