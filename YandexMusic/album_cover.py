@@ -21,7 +21,7 @@ def get_model_info(model_ID, device):
 	
 # Set the device
 device = "cuda" if torch.cuda.is_available() else "cpu"
-device = "cpu"
+#device = "cpu"
 
 
 # Define the model ID
