@@ -1,5 +1,5 @@
 import streamlit as st
-from streamlit import caching
+#from streamlit import caching
 from faiss import write_index, read_index
 from transformers import CLIPProcessor, CLIPModel, CLIPTokenizer
 import numpy as np
