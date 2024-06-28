@@ -1,5 +1,5 @@
 # 22. Алгоритмическая торговля на бирже
-[ipynb](https://github.com/AlexKretov/Portfolio/blob/ac531a7221f3d118a98f6685d8eb41c152190e67/AlgoTrade/triple_barier_model.ipynb)](https://github.com/AlexKretov/Portfolio/blob/27f651e7e8435cfcefb2eb6f355493b2b295f522/AlgoTrade/triple_barier_model.ipynb)
+[ipynb](https://github.com/AlexKretov/Portfolio/blob/27f651e7e8435cfcefb2eb6f355493b2b295f522/AlgoTrade/triple_barier_model.ipynb)
 |Сферы деятельности компаний| Финансы, биржевая торговля |
 |---------------------------|---------------------------|
 |Направление деятельности| Анализ времянных рядов, торговые алгоритмы|
